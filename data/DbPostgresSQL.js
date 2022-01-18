@@ -1,7 +1,6 @@
 const pg = require('pg');
-const Db = require('./Db');
 
-class DbPostgresql extends Db
+class DbPostgresql
 {
   constructor(config)
   {
