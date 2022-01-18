@@ -19,6 +19,8 @@
   "homepage": "https://github.com/ali-chaudhry/dump-service#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "pg": "^8.7.1"
+    "mysql": "^2.18.1",
+    "pg": "^8.7.1",
+    "redis": "^4.0.2"
   }
 }
