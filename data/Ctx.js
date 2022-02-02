@@ -11,28 +11,11 @@ const DbPostgresql = require('./DBPostgresSQL');
 const ctx = {};
 
 //ctx.profiler = profiler;
+  
 
-const postgresSQLConfig = 
-{
-  user: config.POSTGRESSQL_USER,
-  host: config.POSTGRESSQL_HOST,
-  database: config.POSTGRESSQL_NAME,
-  password: config.POSTGRESSQL_PASSWORD,
-  port: POSTGRESSQL_PORT
-};
+ctx.dbPostgres = new DbPostgresql(config.postgress.db1);
 
-ctx.dbPostgres = new DbPostgresql(postgresSQLConfig);
-
-const mySqlConfig = 
-{
-  host: config.MYSQL_HOST,
-  user:  config.MYSQL_USER,
-  password:  config.MYSQL_PASSWORD,
-  database: config.MYSQL_DATABASE
-}
-
-
-ctx.dbMysql = new DbMysql(mySqlConfig);
+ctx.dbMysql = new DbMysql(config.mysql.db1);
 
 
 function newCacheRedis(redis, config)

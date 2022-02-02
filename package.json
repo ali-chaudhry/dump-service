@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ali-chaudhry/dump-service#readme",
   "dependencies": {
+    "dotenv": "^15.0.0",
     "express": "^4.17.2",
     "mysql": "^2.18.1",
     "pg": "^8.7.1",
